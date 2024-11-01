@@ -55,7 +55,9 @@ ROOT_URLCONF = 'NewsLetterSubscription.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR/'subscription'/'Templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
